@@ -5,6 +5,7 @@ import Login from '../screens/Login';
 import Welcome from '../screens/Welcome';
 import Home from '../screens/Home';
 import Clientes from '../screens/Clientes'
+import NovoCliente from '../screens/NovoCliente'
 import {StatusBar} from 'react-native';
 
 
@@ -17,6 +18,7 @@ function StackNavigator(){
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="Clientes" component={Clientes} />
+            <Stack.Screen name="NovoCliente" component={NovoCliente} />
         </Stack.Navigator>
         
     )

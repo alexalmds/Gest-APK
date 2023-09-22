@@ -20,7 +20,7 @@ export default function Login() {
     async function login() {
        navigation.reset({
         index: 0,
-        routes: [{ name: 'Clientes'}]
+        routes: [{ name: 'Home'}]
        }) 
     }
 
@@ -56,7 +56,7 @@ export default function Login() {
                 <TouchableOpacity style={styles.buttonPw} >
                     <Text style={styles.pwText}>Esqueceu a senha?</Text>
                 </TouchableOpacity>
-                <Text style={styles.version}>v 1.0.0 BETA build 210923</Text>
+                <Text style={styles.version}>v 1.0.0 BETA build 220923</Text>
 
                 <Image
                     source={require('../../assets/logo-empresa.png')}
