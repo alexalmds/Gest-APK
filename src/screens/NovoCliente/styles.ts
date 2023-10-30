@@ -37,6 +37,7 @@ export const styles = StyleSheet.create({
         borderRadius: 5,
         padding: 5,
         marginBottom: 5,
+        marginTop: 500,
         justifyContent: "center",
         marginHorizontal: 5,
         alignSelf: "center",
@@ -52,7 +53,7 @@ export const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         borderRadius: 10,
-        marginTop: 20,
+        marginTop: 10,
         marginBottom: 20,
     },
 

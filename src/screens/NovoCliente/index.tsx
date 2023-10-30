@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Alert, Text, TextInput, View, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { RouteProp, useNavigation, useRoute } from '@react-navigation/core';
 import { RectButton } from 'react-native-gesture-handler';
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import { Ionicons } from '@expo/vector-icons';
 import { styles } from './styles';
 import { Success } from '../../lotties/Success';
@@ -56,7 +57,7 @@ const NovoCliente: React.FC = () => {
             setEmail("");
 
         } catch (error) {
-            Alert.alert("Ops", "Alguma coisa deu errado, tente novamente.");
+            Alert.alert("Ops", "Houve um problema ao salvar as informações.");
             setSucess(false);
         }
     }
@@ -104,6 +105,7 @@ const NovoCliente: React.FC = () => {
     
 
     return (
+        <GestureHandlerRootView style={{flex: 1}}>
         <View style={{ flex: 1, marginTop: 20 }}>
             <View style={styles.Header}>
                 <TouchableOpacity
@@ -147,7 +149,7 @@ const NovoCliente: React.FC = () => {
                     options={{
                         maskType: 'BRL',
                         withDDD: true,
-                        dddMask: '(31) '
+                        dddMask: '(99) '
                     }}
                     value={celular}
                     onChangeText={text => setCelular(text)}
@@ -214,6 +216,7 @@ const NovoCliente: React.FC = () => {
             {/* <NewPacientes /> */}
 
         </View>
+        </GestureHandlerRootView>
     );
 }
 
