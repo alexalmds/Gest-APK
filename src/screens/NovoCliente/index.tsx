@@ -170,6 +170,21 @@ const NovoCliente: React.FC = () => {
             </View>
 
             <View>
+                <Text style={styles.TitleInputs}>Empresa</Text>
+                <View style={styles.Picker}>
+                    <Picker
+                        selectedValue={ativo}
+                        onValueChange={(itemValue, itemIndex) => setAtivo(itemValue)}
+                        style={{ color: '#000' }}
+                    >
+                        <Picker.Item label="Empresa Modelo" value="1" />
+                       
+                       
+                    </Picker>
+                </View>
+            </View>
+
+            <View>
                 <Text style={styles.TitleInputs}>Email</Text>
 
                 <TextInput
@@ -191,6 +206,21 @@ const NovoCliente: React.FC = () => {
                     >
                         <Picker.Item label="Ativo" value="Ativo" />
                         <Picker.Item label="Inativo" value="Inativo" />
+                       
+                    </Picker>
+                </View>
+            </View>
+
+            <View>
+                <Text style={styles.TitleInputs}>Tipo Pessoa</Text>
+                <View style={styles.Picker}>
+                    <Picker
+                        selectedValue={ativo}
+                        onValueChange={(itemValue, itemIndex) => setAtivo(itemValue)}
+                        style={{ color: '#000' }}
+                    >
+                        <Picker.Item label="CPF" value="CPF" />
+                        <Picker.Item label="CNPJ" value="CNPJ" />
                        
                     </Picker>
                 </View>
